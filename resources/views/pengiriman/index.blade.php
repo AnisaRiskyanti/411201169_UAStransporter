@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <div class="btn-add-new">
                             <a href="{{url('pengiriman/create')}}">
-                                <button type="button" class="btn btn-primary">Add New</button>
+                                <button type="button" class="btn btn-warning">Add New</button>
                             </a>
                         </div>
                         <div class="card-tools">
@@ -42,17 +42,17 @@
                                     <td>{{ date('d-m-Y', strtotime($value->tanggal ))}}</td>
                                     <td>
                                         <a href="{{url('pengiriman/'.$value->id) }}">
-                                            <button type="button" class="btn btn-primary">View
+                                            <button type="button" class="btn btn-warning">View
                                             </button>
                                         </a>
                                         <a href="{{url('pengiriman/'.$value->id) .'/edit'}}">
-                                            <button type="button" class="btn btn-primary">Edit
+                                            <button type="button" class="btn btn-warning">Edit
                                             </button>
                                         </a>
                                         <form method="POST" action={{url('pengiriman/'.$value->id)}}>
                                             @csrf
                                             @method('DELETE')
-                                            <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-primary">Delete
+                                            <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-warning">Delete
                                             </button>
                                         </form>
                                     </td>

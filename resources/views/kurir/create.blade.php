@@ -39,7 +39,7 @@
                                 <div class="error">{{ $errors->first('error_msg') }}</div>
                             @enderror
                             </div>
-                            <button type="submit" class="form-control btn btn-primary">Submit</button>
+                            <button type="submit" class="form-control btn btn-warning">Submit</button>
                         </form>
                     </div>
                     <!-- /.card-body -->

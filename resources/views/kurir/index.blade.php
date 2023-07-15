@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <div class="btn-add-new">
                             <a href="{{url('kurir/create')}}">
-                                <button type="button" class="btn btn-primary">Add New</button>
+                                <button type="button" class="btn btn-warning">Add New</button>
                             </a>
                         </div>
                         <div class="card-tools">
@@ -35,17 +35,17 @@
                                     <td>{{ $value->email }}</td>
                                     <td>
                                         <a href="{{url('kurir/'.$value->id) }}">
-                                            <button type="button" class="btn btn-primary">View
+                                            <button type="button" class="btn btn-warning">View
                                             </button>
                                         </a>
                                         <a href="{{url('kurir/'.$value->id) .'/edit'}}">
-                                            <button type="button" class="btn btn-primary">Edit
+                                            <button type="button" class="btn btn-warning">Edit
                                             </button>
                                         </a>
                                         <form method="POST" action={{url('kurir/'.$value->id)}}>
                                             @csrf
                                             @method('DELETE')
-                                            <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-primary">Delete
+                                            <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-warning">Delete
                                             </button>
                                         </form>
                                     </td>
