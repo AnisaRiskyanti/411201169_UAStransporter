@@ -57,21 +57,21 @@ class PengirimanController extends Controller
     {
         try {
             $messages = [
-                'no_pengiriman.required' => 'No pengiriman wajib diisi',
-                'no_pengiriman.unique' => 'Kode no pengiriman terdaftar',
-                'tanggal.required' => 'Tanggal wajib diisi',
-                'tanggal.date' => 'Mohon isi tanggal dengan format yang sesuai',
-                'lokasi_id.required' => 'Lokasi id wajib diisi',
-                'lokasi_id.numeric' => 'Mohon isi lokasi id dengan angka',
-                'barang_id.required' => 'Barang id wajib diisi',
-                'barang_id.numeric' => 'Mohon isi barang id dengan angka',
-                'kurir_id.required' => 'Kurir id wajib diisi',
-                'kurir_id.numeric' => 'Mohon isi kurir id dengan angka',
-                'jumlah_barang.required' => 'Jumlah barang wajib diisi',
-                'jumlah_barang.numeric' => 'Mohon isi jumlah barang dengan angka',
-                'jumlah_barang.min' => 'Mohon isi jumlah barang minimal 1',
-                'harga_barang.required' => 'Harga barang wajib diisi',
-                'harga_barang.numeric' => 'Mohon isi harga barang dengan angka'
+                'no_pengiriman.required' => 'No pengiriman harap diisi',
+                'no_pengiriman.unique' => 'Kode no pengiriman sudah terdaftar',
+                'tanggal.required' => 'Tanggal harap diisi',
+                'tanggal.date' => 'Harap isi tanggal dengan format yang sesuai',
+                'lokasi_id.required' => 'Lokasi id Harap diisi',
+                'lokasi_id.numeric' => 'Harap isi lokasi id dengan angka',
+                'barang_id.required' => 'Barang id harap diisi',
+                'barang_id.numeric' => 'Harap isi barang id dengan angka',
+                'kurir_id.required' => 'Kurir id harap diisi',
+                'kurir_id.numeric' => 'Harap isi kurir id dengan angka',
+                'jumlah_barang.required' => 'Jumlah barang harap diisi',
+                'jumlah_barang.numeric' => 'Harap isi jumlah barang dengan angka',
+                'jumlah_barang.min' => 'Harap isi jumlah barang minimal 1',
+                'harga_barang.required' => 'Harga barang harap diisi',
+                'harga_barang.numeric' => 'Harap isi harga barang dengan angka'
             ];
             $validator = Validator::make($request->all(), [
                 'no_pengiriman'=> 'required|unique:pengiriman',
@@ -181,18 +181,18 @@ class PengirimanController extends Controller
     {
         try {
             $messages = [
-                'no_pengiriman.required' => 'No pengiriman wajib diisi',
-                'tanggal.required' => 'Tanggal wajib diisi',
-                'lokasi_id.required' => 'Lokasi id wajib diisi',
-                'lokasi_id.numeric' => 'Mohon isi lokasi id dengan angka',
-                'barang_id.required' => 'Barang id wajib diisi',
-                'barang_id.numeric' => 'Mohon isi barang id dengan angka',
-                'kurir_id.required' => 'Kurir id wajib diisi',
-                'kurir_id.numeric' => 'Mohon isi kurir id dengan angka',
-                'jumlah_barang.required' => 'Jumlah barang wajib diisi',
-                'jumlah_barang.numeric' => 'Mohon isi jumlah barang dengan angka',
-                'harga_barang.required' => 'Harga barang wajib diisi',
-                'harga_barang.numeric' => 'Mohon isi harga barang dengan angka'
+                'no_pengiriman.required' => 'No pengiriman harap diisi',
+                'tanggal.required' => 'Tanggal harap diisi',
+                'lokasi_id.required' => 'Lokasi id harap diisi',
+                'lokasi_id.numeric' => 'Harap isi lokasi id dengan angka',
+                'barang_id.required' => 'Barang id harap diisi',
+                'barang_id.numeric' => 'Harap isi barang id dengan angka',
+                'kurir_id.required' => 'Kurir id harap diisi',
+                'kurir_id.numeric' => 'Harap isi kurir id dengan angka',
+                'jumlah_barang.required' => 'Jumlah barang harap diisi',
+                'jumlah_barang.numeric' => 'Harap isi jumlah barang dengan angka',
+                'harga_barang.required' => 'Harga barang harap diisi',
+                'harga_barang.numeric' => 'Harap isi harga barang dengan angka'
             ];
             $validator = Validator::make($request->all(), [
                 'no_pengiriman'=> 'required',
